@@ -1,0 +1,32 @@
+
+config logfile
+	option logfilepath '/var/log/plc'
+	option level '5'
+
+config server
+	option serverip '10.141.88.226'
+	option serverport '9054'
+
+config plcudp
+	option udpip '10.141.88.226'
+	option udpport '9600'
+
+config cmdinterval
+	option interval '1000'
+
+config plcdevice
+	option plctype '00'
+	option plcseries '00'
+	option plcip '182.18.5.3'
+	option plcunit '00'
+	option plcnode '00'
+	option pcip '182.18.5.8'
+	option pcunit '00'
+	option pcnode '00'
+	option rorw '0'
+	option bithandle '0'
+	option bitaddr '04'
+	option memory '82'
+	option aisle '0064'
+	option handlenum '0004'
+	option wdata 'CCCC1111DDDD2222'

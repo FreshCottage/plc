@@ -1,0 +1,25 @@
+This is a multi-thread program.
+Function:
+	Read config file and generate the cmd
+	Write log file
+	define message struct,queue
+	1 thread for udp sending,1 thread for udp receiving
+	4(can define self) thread for processing recvdata
+	1 thread for tcp sending,1 thread for tcp receiving
+	1 thread for confudp
+	
+
+Note:
+	uci format config file
+	Makefile to make && make clean && make install
+	PLC_linux.sh start|stop|restart|status
+	PLC.sh start|stop|restart|status
+		Openwrt shell script
+	PLC start|stop|restart|status
+		Openwrt shell script can enable when system starts
+
+	(0)cp plcconf /etc/config
+	(1)cp PLC /etc/init.d
+	(2)dos2unix PLC					if need
+	(3)chmod 755 PLC				if need
+	(4)/etc/init.d/PLC enable		for run plc at system running
